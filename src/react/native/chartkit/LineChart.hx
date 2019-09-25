@@ -1,9 +1,7 @@
 package react.native.chartkit;
 
 @:jsRequire('react-native-chart-kit', 'LineChart')
-extern class LineChart extends ReactComponentOfProps<LineChartProps> {
-	function getDotColor():String;		//Defines the dot color function that is used to calculate colors of dots in a line chart and takes (dataPoint, dataPointIndex)
-}
+extern class LineChart extends ReactComponentOfProps<LineChartProps> {}
 
 typedef LineChartProps = {
 	> BaseChartProps,
@@ -21,4 +19,5 @@ typedef LineChartProps = {
 	?onDataPointClick:Function,			//Callback that takes {value, dataset, getColor}
 	?horizontalLabelRotation:Float, 	//(degree)	Rotation angle of the horizontal labels - default 0
 	?verticalLabelRotation:Float, 		//(degree)	Rotation angle of the vertical labels - default 0
+	?getDotColor:Function			//Defines the dot color function that is used to calculate colors of dots in a line chart and takes (dataPoint, dataPointIndex)
 }

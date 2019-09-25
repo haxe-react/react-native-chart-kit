@@ -9,7 +9,7 @@ typedef ProgressChartProps = {
 }
 
 typedef ProgressChartData = {
-	labels:Array<String>,
+	?labels:Array<String>,
 	data:Array<Float>
 }
 /*

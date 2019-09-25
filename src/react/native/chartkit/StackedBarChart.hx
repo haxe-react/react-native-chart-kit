@@ -5,13 +5,15 @@ extern class StackedBarChart extends ReactComponentOfProps<StackedBarChartProps>
 
 typedef StackedBarChartProps = {
 	> BaseChartProps,
+	data:StackedBarData,				//Data for the chart - see example
+
 	?withVerticalLabels:Bool,			//Show vertical labels - default: True
 	?withHorizontalLabels:Bool,			//Show horizontal labels - default: True
 }
 
 typedef StackedBarData = {
 	labels: Array<String>,
-	?legeng: Array<String>,
+	?legend: Array<String>,
 	data: Array<StackedBarDataSet>,
 	barColors: Array<String>
 }

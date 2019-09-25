@@ -13,7 +13,7 @@ typedef StackedBarChartProps = {
 
 typedef StackedBarData = {
 	labels: Array<String>,
-	?legend: Array<String>,
+	legend: Array<String>,
 	data: Array<StackedBarDataSet>,
 	barColors: Array<String>
 }

@@ -8,6 +8,8 @@ extern class LineChart extends ReactComponentOfProps<LineChartProps> {
 typedef LineChartProps = {
 	> BaseChartProps,
 
+	data:ChartData,						//Data for the chart - see example
+
 	?bezier:Bool,						//Add this prop to make the line chart smooth and curvy
 	?withDots:Bool,						//Show dots on the line - default: True
 	?withShadow:Bool,					//Show shadow for line - default: True

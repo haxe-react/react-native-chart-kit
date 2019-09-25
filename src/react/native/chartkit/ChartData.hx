@@ -2,10 +2,10 @@ package react.native.chartkit;
 
 typedef ChartData = {
 	labels: Array<String>,
-	datasets: Array<DataSet>
+	datasets: Array<ChartDataSet>
 }
 
-typedef DataSet = {
+typedef ChartDataSet = {
 	> ChartConfig,
 	data: Array<Float>
 }

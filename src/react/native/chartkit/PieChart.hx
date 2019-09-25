@@ -10,9 +10,10 @@ typedef PieChartProps = {
 	data:PieChartData,					//Data for the chart - see example
 	accessor:String,					//Property in the data object from which the number values are taken (in this case it's 'value')
 	
-	?bgColor:String,						//background color - if you want to set transparent, input transparent or none.
+	?backgroundColor:String,			//background color - if you want to set transparent, input transparent or none.
+	
 	?paddingLeft:Int,					//left padding of the pie chart
-	?absolute:Bool						//shows the values as absolute numbers
+	?absolute:Bool,						//shows the values as absolute numbers
 }
 
 typedef PieChartData = Array<PieChartDataSet>;
@@ -21,8 +22,8 @@ typedef PieChartDataSet = {
 	value:Float,
 	name:String,
 	color:String,
-	legendFontColor:String,
-	legendFontSize:Int,
+	?legendFontColor:String,
+	?legendFontSize:Int,
 }
 
 /*

@@ -70,24 +70,24 @@ typedef ChartConfig = {
 	/**
 	 * Override styles of the background lines, refer to react-native-svg's Line documentation
 	 */
-	?propsForBackgroundLines: Partial<ViewStyle>,
+	?propsForBackgroundLines: Partial<SvgViewStyle>,
 	/**
 	 * Override styles of the labels, refer to react-native-svg's Text documentation
 	 */
-	?propsForLabels: TextProps,
+	?propsForLabels: SvgTextProps,
 	/**
 	 * Override styles of vertical labels, refer to react-native-svg's Text documentation
 	 */
-	?propsForVerticalLabels: TextProps,
+	?propsForVerticalLabels: SvgTextProps,
 
 	/**
 	 * Override styles of horizontal labels, refer to react-native-svg's Text documentation
 	 */
-	?propsForHorizontalLabels: TextProps,
+	?propsForHorizontalLabels: SvgTextProps,
 	/**
 	 * Override styles of the dots, refer to react-native-svg's Text documentation
 	 */
-	?propsForDots: CircleProps,
+	?propsForDots: SvgCircleProps,
 	?decimalPlaces: Float,
 	?style: Partial<ViewStyle>,
 
@@ -149,6 +149,8 @@ enum abstract LineJoinType(String) {
 	var round;
 }
 
-typedef CircleProps = Dynamic;
+typedef SvgViewStyle = Dynamic;
+typedef SvgCircleProps = Dynamic;
+typedef SvgTextProps = Dynamic;
 
 typedef Partial<T> = haxe.extern.EitherType<T, Array<T>>;

@@ -19,10 +19,10 @@ typedef StackedBarChartProps = AbstractChartProps & {
 	width: Float,
 	height: Float,
 	chartConfig: AbstractChartConfig,
-	hideLegend: Bool,
+	?hideLegend: Bool,
 	?style: Partial<ViewStyle>,
-	barPercentage?: Float,
-	decimalPlaces?: Float,
+	?barPercentage: Float,
+	?decimalPlaces: Float,
 	/**
 	 * Show vertical labels - default: True.
 	 */

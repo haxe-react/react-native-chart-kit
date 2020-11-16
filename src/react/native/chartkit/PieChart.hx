@@ -15,7 +15,7 @@ typedef PieChartProps = AbstractChartProps & {
 	?absolute: Bool,
 	?hasLegend: Bool,
 	?style: Partial<ViewStyle>,
-	?avoidFalseZero?: Bool,
+	?avoidFalseZero: Bool,
 }
 
 typedef PieChartData = Array<PieChartDataSet>;

@@ -1,7 +1,9 @@
-import react.native.component.props.ViewProps;
 import react.ReactComponent;
 
-import haxe.Constraints;
-import haxe.extern.EitherType;
+import react.native.component.props.*;
 
-import react.native.chartkit.ChartConfig;
+import react.ReactComponent;
+
+import react.native.chartkit.HelperTypes;
+import react.native.chartkit.AbstractChart;
+import haxe.Constraints;

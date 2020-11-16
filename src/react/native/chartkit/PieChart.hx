@@ -4,16 +4,18 @@ package react.native.chartkit;
 
 extern class PieChart extends ReactComponentOfProps<PieChartProps> {}
 
-typedef PieChartProps = {
-	> BaseChartProps,
-
-	data:PieChartData,					//Data for the chart - see example
-	accessor:String,					//Property in the data object from which the number values are taken (in this case it's 'value')
-	
-	?backgroundColor:String,			//background color - if you want to set transparent, input transparent or none.
-	
-	?paddingLeft:Int,					//left padding of the pie chart
-	?absolute:Bool,						//shows the values as absolute numbers
+typedef PieChartProps = AbstractChartProps & {
+	data: PieChartData,
+	width: Float,
+	height: Float,
+	accessor: String,
+	backgroundColor: String,
+	paddingLeft: String,
+	?center: Array<Float>,
+	?absolute: Bool,
+	?hasLegend: Bool,
+	?style: Partial<ViewStyle>,
+	?avoidFalseZero?: Bool,
 }
 
 typedef PieChartData = Array<PieChartDataSet>;

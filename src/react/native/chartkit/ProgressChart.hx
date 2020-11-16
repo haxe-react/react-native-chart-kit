@@ -3,13 +3,27 @@ package react.native.chartkit;
 @:jsRequire('react-native-chart-kit', 'ProgressChart')
 extern class ProgressChart extends ReactComponentOfProps<ProgressChartProps> {}
 
-typedef ProgressChartProps = {
-	>BaseChartProps,
-	data:ProgressChartData,						//Data for the chart - see example
+typedef ProgressChartProps = AbstractChartProps & {
+	data: ProgressChartData,
+	width: Float,
+	height: Float,
+	accessor: String,
+	backgroundColor: String,
+	paddingLeft: String,
+	?center: Array<Float>,
+	?absolute: Bool,
+	?hasLegend: Bool,
+	?style: Partial<ViewStyle>,
+	?chartConfig: AbstractChartConfig,
+	?hideLegend: Bool,
+	?strokeWidth: Float,
+	?radius: Float,
+	?withCustomBarColorFromData: Bool,
 }
 
 typedef ProgressChartData = {
 	?labels:Array<String>,
+	?colors: Array<String>,
 	data:Array<Float>
 }
 /*
